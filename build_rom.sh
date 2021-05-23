@@ -6,7 +6,7 @@ repo sync --force-sync --no-tags --no-clone-bundle
 # build rom
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
-lunch aosip_ysl-eng
+lunch aosip_ysl-userdebug
 time m kronic
 
 # upload rom
