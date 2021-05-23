@@ -8,8 +8,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # Build ROM
 . build/envsetup.sh
-lunch wave_mido-user
-mka clean
+lunch wave_mido-eng
 mka bacon -j$(nproc --all)
 
 # Upload build
