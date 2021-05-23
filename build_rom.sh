@@ -9,6 +9,6 @@ lunch styx_RMX1941-userdebug
 m styx-ota
               
 # upload rom
-rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P
+rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P     
    
       
