@@ -1,8 +1,8 @@
 
 # sync rom
-repo init --depth=1 -u git://github.com/DerpFest-11/manifest.git -b 11 -g default,-device,-mips,-darwin,-notdefault
+repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-11.0 -g default,-device,-mips,-darwin,-notdefault
 
-git clone https://github.com/P-Salik/local_manifest --depth=1 -b DerpFest .repo/local_manifests
+git clone https://github.com/P-Salik/local_manifest --depth=1 -b Arrow .repo/local_manifests
 
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
@@ -19,8 +19,8 @@ cd ../../../..
 
 # build
 . build/envsetup.sh
-lunch derp_RMX1941-userdebug
-mka derp
+lunch arrow_RMX1941-userdebug
+m bacon
 
 # upload build
 rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P
