@@ -5,6 +5,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build rom
 source build/envsetup.sh
+git clone https://github.com/LineageOS/android_packages_resources_devicesettings.git packages/resources/devicesettings
 lunch aosp_violet-userdebug
 m aex
 #if you are a patch user (which is really not normal and not recommended), then must put like this, `m aex || repo forall -c 'git checkout .'
