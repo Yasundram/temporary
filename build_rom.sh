@@ -9,6 +9,7 @@ curl -LO https://github.com/PixelExperience/external_selinux/commit/9d6ebe89430f
 patch -p1 < *.patch
 cd ../..
 
+
 # build rom
 source build/envsetup.sh
 lunch nezuko_RMX1941-userdebug
