@@ -1,4 +1,3 @@
-
 #Sync ROM
 repo init --depth=1 -u https://github.com/Wave-Project/manifest -b r -g default,-device,-mips,-darwin,-notdefault
 
@@ -13,3 +12,4 @@ mka bacon -j$(nproc --all)
 
 # Upload build
 rclone copy out/target/product/mido/*.zip cirrus:mido -P
+#20
