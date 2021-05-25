@@ -8,7 +8,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # Patches
 cd external/selinux
-curl -LO https://github.com/PixelExperience/external_selinux/commit/9d6ebe89430ffe0aeeb156f572b2a810f9dc98cc.patch
+curl -LO  https://github.com/SamarV-121/android_vendor_extra/blob/lineage-18.1/patches/external/selinux/0001-Revert-libsepol-Make-an-unknown-permission-an-error-.patch
 patch -p1 < *.patch
 cd ../..
 
@@ -17,6 +17,10 @@ curl -LO https://github.com/phhusson/platform_frameworks_av/commit/624cfc90b8bed
 patch -p1 < *.patch
 cd ../../../..
 
+cd net/opt/ims
+curl -LO https://github.com/PixelExperience/frameworks_opt_net_ims/commit/661ae9749b5ea7959aa913f2264dc5e170c63a0ah.patch
+patch -p1 < *.patch
+cd ../../../..
 
 # build
 . build/envsetup.sh
