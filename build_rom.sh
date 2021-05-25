@@ -12,7 +12,7 @@ cd ../..
 # build rom      
 source build/envsetup.sh
 export PALLADIUM_BUILD_VARIANT=GAPPS
-lunch palladium_RMX1941-userdebug
+lunch palladium_RMX1941-userdebug     
 mka palladium
       
 # upload rom
