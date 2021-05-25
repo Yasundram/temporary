@@ -11,7 +11,7 @@ cd ../..
 
 # build rom      
 source build/envsetup.sh
-export USE_GAPPS = true
+export PALLADIUM_BUILD_VARIANT=GAPPS
 lunch palladium_RMX1941-userdebug
 mka palladium
       
