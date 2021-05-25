@@ -1,12 +1,13 @@
 # sync rom
-repo init --depth=1 -u https://github.com/CherishOS/android_manifest.git -b eleven -g default,-device,-mips,-darwin,-notdefault
-git clone https://github.com/HyperNotAryanX97/Begonia -b backup .repo/local_manifests
+repo init --depth=1 -u https://github.com/Project-Awaken/android_manifest -b 11 -g default,-device,-mips,-darwin,-notdefault
+git clone https://github.com/HyperNotAryanX97/Begonia -b awaken .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # build rom
 source build/envsetup.sh
-lunch cherish_begonia-userdebug
-brunch begonia
+lunch awaken_begonia-userdebug
+mka bacon
+
 #if you are a patch user (which is really not normal and not recommended), then must put like this, `m aex || repo forall -c 'git checkout .'
 
 # upload rom
