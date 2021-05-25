@@ -9,10 +9,10 @@ curl -LO https://github.com/PixelExperience/external_selinux/commit/9d6ebe89430f
 patch -p1 < *.patch
 cd ../..
 
-cd frameworks/base
-curl -LO https://github.com/PixelExperience/frameworks_base/commit/37f5a323245b0fd6269752742a2eb7aa3cae24a7.patch
-patch -p1 < *.patch
-cd ../..
+#cd frameworks/base
+#curl -LO https://github.com/PixelExperience/frameworks_base/commit/37f5a323245b0fd6269752742a2eb7aa3cae24a7.patch
+#patch -p1 < *.patch
+#cd ../..
 
 cd frameworks/opt/net/wifi
 curl -LO https://github.com/PixelExperience/frameworks_opt_net_wifi/commit/3bd2c14fbda9c079a4dc39ff4601ba54da589609.patch
