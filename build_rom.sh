@@ -15,7 +15,7 @@ patch -p1 < *.patch
 cd ../..
 
 cd frameworks/opt/net/wifi
-#curl -LO https://github.com/PixelExperience/frameworks_opt_net_wifi/commit/3bd2c14fbda9c079a4dc39ff4601ba54da589609.patch
+curl -LO https://github.com/PixelExperience/frameworks_opt_net_wifi/commit/3bd2c14fbda9c079a4dc39ff4601ba54da589609.patch
 patch -p1 < *.patch
 cd ../../../..
 
