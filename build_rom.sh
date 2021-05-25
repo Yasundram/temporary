@@ -24,7 +24,8 @@ cd ../..
 
 # build
 . build/envsetup.sh
-brunch RMX1941
+lunch havoc_RMX1941-userdebug
+brunch
 
 # upload build
 rclone copy out/target/product/RMX1941/*UNOFFICIAL*.zip cirrus:RMX1941 -P
