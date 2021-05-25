@@ -1,4 +1,4 @@
-#please fix branch naming 
+#flxed anything else ? 
 # sync rom
 repo init --depth=1 -u https://github.com/Lineage-FE/manifest -b lineage-18.1 -g default,-device,-mips,-darwin,-notdefault
 git clone https://github.com/baibhab34/local_manifest --depth 1 -b los .repo/local_manifests
