@@ -26,6 +26,7 @@ curl -LO https://github.com/phhusson/platform_frameworks_av/commit/624cfc90b8bed
 patch -p1 < *.patch
 cd ../../../..
 
+
 # build
 . build/envsetup.sh
 lunch nad_RMX1941-userdebug
