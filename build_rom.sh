@@ -24,6 +24,8 @@ cd ../..
 
 # build
 . build/envsetup.sh
+export WITH_GAPPS=true
+export TARGET_GAPPS_ARCH=arm64
 lunch havoc_RMX1941-userdebug
 brunch RMX1941
 
