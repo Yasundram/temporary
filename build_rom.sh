@@ -1,3 +1,4 @@
+#please fix branch naming
 # sync rom
 repo init --depth=1 -u git://github.com/SpiceOS/android.git -b 11 -g default,-device,-mips,-darwin,-notdefault
 git clone https://github.com/himanshu0218/local_manifest.git --depth 1 -b main .repo/local_manifests
