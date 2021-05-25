@@ -24,7 +24,7 @@ curl -LO https://github.com/PixelExperience/frameworks_opt_net_ims/commit/661ae9
 patch -p1 < *.patch
 cd ../../../..
 
-# build rom      
+# build rom           
 source build/envsetup.sh
 export PALLADIUM_BUILD_VARIANT=GAPPS
 lunch palladium_RMX1941-userdebug     
