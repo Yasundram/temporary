@@ -4,7 +4,7 @@ git clone https://github.com/cArN4gEisDeD/local_manifest --depth=1 -b main .repo
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # build rom      
-source build/envsetup.sh
+source build/envsetup.sh      
 lunch styx_RMX1941-userdebug
 m styx-ota
          
