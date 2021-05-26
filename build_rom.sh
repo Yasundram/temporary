@@ -14,10 +14,10 @@ cd ../..
 #patch -p1 < *.patch
 #cd ../..
 
-cd frameworks/opt/net/wifi
-curl -LO https://github.com/PixelExperience/frameworks_opt_net_wifi/commit/3bd2c14fbda9c079a4dc39ff4601ba54da589609.patch
-patch -p1 < *.patch
-cd ../../../..
+#cd frameworks/opt/net/wifi
+#curl -LO https://github.com/PixelExperience/frameworks_opt_net_wifi/commit/3bd2c14fbda9c079a4dc39ff4601ba54da589609.patch
+#patch -p1 < *.patch
+#cd ../../../..
 
 cd frameworks/opt/net/ims
 curl -LO https://github.com/PixelExperience/frameworks_opt_net_ims/commit/661ae9749b5ea7959aa913f2264dc5e170c63a0a.patch
