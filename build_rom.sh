@@ -5,14 +5,13 @@ git clone https://github.com/Fraschze97/local_manifest --depth=1 -b nusantara .r
 
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
-
 # Patches
 cd external/selinux
 curl -LO  https://github.com/SamarV-121/android_vendor_extra/blob/lineage-18.1/patches/external/selinux/0001-Revert-libsepol-Make-an-unknown-permission-an-error-.patch
 patch -p1 < *.patch
 cd ../..
 
-cd media/libstagefright
+cd framework/av
 curl -LO https://github.com/phhusson/platform_frameworks_av/commit/624cfc90b8bedb024f289772960f3cd7072fa940.patch
 patch -p1 < *.patch
 cd ../../../..
