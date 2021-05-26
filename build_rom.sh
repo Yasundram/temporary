@@ -9,7 +9,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 . build/envsetup.sh
 lunch wave_mido-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true
-mka bacon -j$(nproc --all)
+mka bacon
 
 # Upload build
 rclone copy out/target/product/mido/*.zip cirrus:mido -P
