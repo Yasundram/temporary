@@ -7,16 +7,16 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # Patches
 cd external/selinux
-curl -LO  https://github.com/SamarV-121/android_vendor_extra/blob/lineage-18.1/patches/external/selinux/0001-Revert-libsepol-Make-an-unknown-permission-an-error-.patch
+curl -LO  https://github.com/PixelExperience/external_selinux/commit/9d6ebe89430ffe0aeeb156f572b2a810f9dc98cc.patch
 patch -p1 < *.patch
 cd ../..
 
-cd framework/av
+cd platform/frameworks/av
 curl -LO https://github.com/phhusson/platform_frameworks_av/commit/624cfc90b8bedb024f289772960f3cd7072fa940.patch
 patch -p1 < *.patch
 cd ../../../..
 
-cd net/opt/ims
+cd frameworks/opt/net/ims
 curl -LO https://github.com/PixelExperience/frameworks_opt_net_ims/commit/661ae9749b5ea7959aa913f2264dc5e170c63a0ah.patch
 patch -p1 < *.patch
 cd ../../../..
@@ -29,4 +29,4 @@ export SELINUX_IGNORE_NEVERALLOWS=true
 mka nad
 
 # upload 
-rclone copy out/target/product/RMX1941/*.zip cirrus:RMX1941 -P  
+rclone copy out/target/product/RMX1941/*.zip cirrus:RMX1941 -P 
