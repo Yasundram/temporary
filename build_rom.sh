@@ -5,6 +5,7 @@ git clone https://github.com/Fraschze97/local_manifest --depth=1 -b nusantara .r
 
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
+
 # Patches
 cd external/selinux
 curl -LO  https://github.com/PixelExperience/external_selinux/commit/9d6ebe89430ffe0aeeb156f572b2a810f9dc98cc.patch
